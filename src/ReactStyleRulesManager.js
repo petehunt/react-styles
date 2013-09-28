@@ -1,12 +1,7 @@
-/**
- * @providesModule ReactStyleRulesManager
- * @jsx React.DOM
- */
-
 'use strict'
 
 var React = require('React');
-var ReactStyleRules = require('ReactStyleRules');
+var ReactStyleRules = require('./ReactStyleRules');
 
 /**
  * @param {number} maxRulesLengthPerStyle

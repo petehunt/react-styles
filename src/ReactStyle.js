@@ -1,9 +1,5 @@
-/**
- * @providesModule ReactStyle
- */
-
-var ReactStyleRules = require('ReactStyleRules');
-var ReactStyleRulesManager = require('ReactStyleRulesManager');
+var ReactStyleRules = require('./ReactStyleRules');
+var ReactStyleRulesManager = require('./ReactStyleRulesManager');
 
 /**
  * @constructor

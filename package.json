@@ -1,10 +1,10 @@
 {
   "name": "react-styles",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Utility to manage styles for React JS components",
   "main": "main.js",
   "dependencies": {
-    "React": "git://github.com/facebook/react.git"
+    "React": "git://github.com/petehunt/react-core"
   },
   "author": {
     "name": "Hedger Wang",
