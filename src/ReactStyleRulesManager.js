@@ -1,3 +1,7 @@
+/**
+ * @jsx React.DOM
+ */
+
 'use strict'
 
 var React = require('React');
@@ -62,9 +66,11 @@ ReactStyleRulesManager.prototype.renderToComponents = function() {
     var newRulesCount = rulesCount + styleRules.length;
     if (newRulesCount > maxRulesLengthPerStyle) {
       if (cssText) {
+        var key = 's' + (index++);
         components.push(
           <style
-            key={'s' + (index++)}
+            key={key}
+            id={key}
             dangerouslySetInnerHTML={{__html: cssText}}
           />
         );
@@ -78,9 +84,11 @@ ReactStyleRulesManager.prototype.renderToComponents = function() {
   }
 
   if (cssText) {
+    var key = 's' + (index++);
     components.push(
       <style
-        key={'s' + (index++)}
+        key={key}
+        id={key}
         dangerouslySetInnerHTML={{__html: cssText}}
       />
     );
